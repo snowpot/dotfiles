@@ -94,7 +94,7 @@ vim.lsp.handlers["textDocument/publishDiagnotics"] = vim.lsp.with(vim.lsp.diagno
 	virtual_text = {
 		spacing = 4,
 	},
-	signs = function(namespace, bufnr)
+	signs = function(_, bufnr)
 		return vim.b[bufnr].show_signs == true
 	end,
 	update_in_insert = false,
