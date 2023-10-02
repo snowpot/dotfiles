@@ -14,7 +14,10 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   "github/copilot.vim",
-  "nvim-lualine/lualine.nvim",
+  {
+    "nvim-lualine/lualine.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons"}
+  },
   "neovim/nvim-lspconfig",
   {
     "onsails/lspkind.nvim",

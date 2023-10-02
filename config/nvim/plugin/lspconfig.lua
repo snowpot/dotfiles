@@ -101,6 +101,6 @@ vim.lsp.handlers["textDocument/publishDiagnotics"] = vim.lsp.with(vim.lsp.diagno
 })
 
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
-	border = "double",
+	border = "single",
 	title = "hover",
 })

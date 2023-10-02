@@ -23,6 +23,7 @@ ts.setup({
 		"css",
 		"html",
 		"lua",
+    "http"
 	},
 	autotag = {
 		enable = true,
