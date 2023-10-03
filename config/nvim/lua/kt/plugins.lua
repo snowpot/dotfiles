@@ -13,10 +13,11 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  "jose-elias-alvarez/null-ls.nvim",
   "github/copilot.vim",
   {
     "nvim-lualine/lualine.nvim",
-    dependencies = { "nvim-tree/nvim-web-devicons"}
+    dependencies = { "nvim-tree/nvim-web-devicons" }
   },
   "neovim/nvim-lspconfig",
   {

@@ -4,6 +4,18 @@ if not status then
 end
 
 local protocol = require("vim.lsp.protocol")
+local augroup_format = vim.api.nvim_create_augroup("Format", { clear = true })
+local enable_format_on_save = function(_, bufnr)
+  vim.api.nvim_clear_autocmds({ group = augroup_format, buffer = bufnr })
+  vim.api.nvim_create_autocmd("BufWritePre", {
+    group = augroup_format,
+    buffer = bufnr,
+    callback = function()
+      vim.lsp.buf.format({ bufnr = bufnr })
+    end,
+  })
+end
+
 
 local on_attach = function(client, bufnr)
 	client.server_capabilities.semanticTokensProvider = nil
@@ -66,6 +78,7 @@ nvim_lsp.lua_ls.setup({
 	capabilities = capabilities,
 	on_attach = function(client, bufnr)
 		on_attach(client, bufnr)
+    enable_format_on_save(client, bufnr)
 	end,
 	settings = {
 		Lua = {
@@ -91,14 +104,19 @@ nvim_lsp.lua_ls.setup({
 
 vim.lsp.handlers["textDocument/publishDiagnotics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
 	underline = true,
+  update_in_insert = false,
 	virtual_text = {
 		spacing = 4,
+    prefix = "\u{ea71}"
 	},
-	signs = function(_, bufnr)
-		return vim.b[bufnr].show_signs == true
-	end,
-	update_in_insert = false,
+  severity_sort = true,
 })
+
+local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
+for type, icon in pairs(signs) do
+  local hl = "DiagnosticSign" .. type
+  vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
+end
 
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
 	border = "single",
