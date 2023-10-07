@@ -24,10 +24,18 @@ telescope.setup({
 			},
 		},
 	},
+	pickers = {
+		find_files = {
+			theme = "dropdown",
+			hidden = true,
+			previewer = true,
+		},
+	},
 	extensions = {
 		file_browser = {
 			theme = "dropdown",
 			hijack_netrw = true,
+			hidden = true,
 		},
 	},
 })
