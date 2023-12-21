@@ -1,0 +1,55 @@
+{
+  "workbench.iconTheme": "macos-classic-icons",
+  "editor.stickyScroll.enabled": false,
+  "editor.folding": false,
+  "editor.formatOnSave": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.hlsearch": true,
+  "terminal.integrated.fontFamily": "MesloLGS Nerd Font",
+  "workbench.settings.editor": "json",
+  "window.nativeTabs": false,
+  "workbench.activityBar.location": "top",
+  "editor.fontFamily": "Menlo, Monaco, Consolas, 'Courier New', monospace",
+  "editor.fontSize": 12,
+  "workbench.editor.showIcons": false,
+  "workbench.sideBar.location": "left",
+  "workbench.preferredLightColorTheme": "macOS Classic",
+  "workbench.preferredDarkColorTheme": "macOS Classic Dark v2",
+  "editor.renderLineHighlight": "none",
+  "editor.minimap.enabled": false,
+  "editor.glyphMargin": false,
+  "editor.selectionHighlight": false,
+  "editor.scrollbar.verticalScrollbarSize": 4,
+  "editor.scrollbar.horizontalScrollbarSize": 4,
+  "editor.formatOnSaveMode": "file",
+  "workbench.colorTheme": "macOS Classic Dark v2",
+  "editor.wordWrap": "on",
+  "terminal.integrated.shellIntegration.enabled": true,
+  "syntax.highlightLanguages": [
+    "python",
+    "typescript",
+    "typescriptreact",
+    "javascript",
+    "html",
+    "css",
+    "json",
+    "yaml",
+    "go",
+    "rust",
+    "php",
+    "ruby",
+    "shellscript",
+    "lua"
+  ],
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
