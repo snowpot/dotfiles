@@ -16,6 +16,7 @@ ts.setup({
 		"markdown",
 		"markdown_inline",
 		"tsx",
+		"go",
 		"typescript",
 		"fish",
 		"json",
@@ -27,10 +28,6 @@ ts.setup({
 	},
 	autotag = {
 		enable = true,
-	},
-	context_commentstring = {
-		enable = true,
-		enable_autocmd = false,
 	},
 })
 

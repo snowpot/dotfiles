@@ -1,7 +1,8 @@
 vim.scriptencoding = "utf-8"
 
 local opt = vim.opt
-
+opt.termguicolors = true
+opt.winblend = 20
 opt.encoding = "utf-8"
 opt.fileencoding = "utf-8"
 opt.nu = true

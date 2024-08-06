@@ -1,0 +1,89 @@
+{
+  "workbench.iconTheme": "vscode-icons",
+  "editor.stickyScroll.enabled": false,
+  "editor.folding": false,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "editor.semanticHighlighting.enabled": false,
+  "vim.hlsearch": true,
+  "window.nativeTabs": false,
+  "workbench.activityBar.location": "hidden",
+  "workbench.editor.showIcons": false,
+  "workbench.sideBar.location": "left",
+  "editor.renderLineHighlight": "none",
+  "editor.minimap.enabled": false,
+  "editor.glyphMargin": false,
+  "editor.selectionHighlight": false,
+  "editor.scrollbar.verticalScrollbarSize": 4,
+  "editor.scrollbar.horizontalScrollbarSize": 4,
+  "editor.formatOnSaveMode": "file",
+  "editor.wordWrap": "on",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.suggestSmartCommit": false,
+  "workbench.startupEditor": "none",
+  "eslint.codeActionsOnSave.mode": "all",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "terminal.integrated.fontFamily": "MesloLGS Nerd Font",
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": false
+  },
+  "workbench.colorCustomizations": {
+    "editor.background": "#191919",
+    "sideBar.background": "#191919",
+    "tab.activeBackground": "#191919",
+    "tab.inactiveBackground": "#333333",
+    "tab.border": "#68d6ff",
+    "editorGroupHeader.tabsBackground": "#191919",
+    "panel.background": "#191919",
+    "titleBar.border": "#191919",
+    "titleBar.activeBackground": "#191919"
+  },
+  "editor.tokenColorCustomizations": {
+    "[Tokyo Night Storm]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "comment",
+            "meta.var.expr storage.type",
+            "keyword.control.flow",
+            "keyword.control.return",
+            "meta.directive.vue punctuation.separator.key-value.html",
+            "meta.directive.vue entity.other.attribute-name.html",
+            "tag.decorator.js entity.name.tag.js",
+            "tag.decorator.js punctuation.definition.tag.js",
+            "storage.modifier"
+          ],
+          "settings": {
+            "fontStyle": ""
+          }
+        }
+      ]
+    }
+  },
+  "window.commandCenter": false,
+  "files.exclude": {
+    "**/.git": false
+  },
+  "errorLens.fontWeight": "400",
+  "json.schemas": [],
+  "editor.fontSize": 13.4,
+  "editor.fontFamily": "Hack Nerd Font",
+  "workbench.colorTheme": "Solarized Dark",
+  "terminal.integrated.fontSize": 13,
+  "workbench.settings.applyToAllProfiles": [
+  
+  ],
+}
