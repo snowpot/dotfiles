@@ -1,5 +1,5 @@
 {
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "vs-seti-folder",
   "editor.stickyScroll.enabled": false,
   "editor.folding": false,
   "vim.insertModeKeyBindings": [
@@ -11,13 +11,13 @@
   "editor.semanticHighlighting.enabled": false,
   "vim.hlsearch": true,
   "window.nativeTabs": false,
-  "workbench.activityBar.location": "hidden",
-  "workbench.editor.showIcons": false,
+  "workbench.activityBar.location": "bottom",
+  "workbench.editor.showIcons": true,
   "workbench.sideBar.location": "left",
-  "editor.renderLineHighlight": "none",
+  "editor.renderLineHighlight": "line",
   "editor.minimap.enabled": false,
   "editor.glyphMargin": false,
-  "editor.selectionHighlight": false,
+  "editor.selectionHighlight": true,
   "editor.scrollbar.verticalScrollbarSize": 4,
   "editor.scrollbar.horizontalScrollbarSize": 4,
   "editor.formatOnSaveMode": "file",
@@ -51,28 +51,6 @@
     "titleBar.border": "#191919",
     "titleBar.activeBackground": "#191919"
   },
-  "editor.tokenColorCustomizations": {
-    "[Tokyo Night Storm]": {
-      "textMateRules": [
-        {
-          "scope": [
-            "comment",
-            "meta.var.expr storage.type",
-            "keyword.control.flow",
-            "keyword.control.return",
-            "meta.directive.vue punctuation.separator.key-value.html",
-            "meta.directive.vue entity.other.attribute-name.html",
-            "tag.decorator.js entity.name.tag.js",
-            "tag.decorator.js punctuation.definition.tag.js",
-            "storage.modifier"
-          ],
-          "settings": {
-            "fontStyle": ""
-          }
-        }
-      ]
-    }
-  },
   "window.commandCenter": false,
   "files.exclude": {
     "**/.git": false
@@ -83,7 +61,6 @@
   "editor.fontFamily": "Hack Nerd Font",
   "workbench.colorTheme": "Solarized Dark",
   "terminal.integrated.fontSize": 13,
-  "workbench.settings.applyToAllProfiles": [
-  
-  ],
+  "workbench.settings.applyToAllProfiles": [],
+  "workbench.settings.editor": "json"
 }
