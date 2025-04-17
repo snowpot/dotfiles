@@ -7,10 +7,9 @@ vim.opt.expandtab = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 vim.opt.smarttab = true
-vim.opt.list = true
 
 vim.opt.number = true
-vim.opt.relativenumber = true
+vim.opt.relativenumber = false
 vim.opt.cursorline = true
 vim.opt.signcolumn = "yes:1"
 vim.opt.scrolloff = 8

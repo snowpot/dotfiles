@@ -12,6 +12,7 @@ end
  vim.opt.rtp:prepend(lazypath) 
 
 require ( "lazy" ).setup({ 
-    spec = "moon.lazy" , 
+    spec = "moon.plugins", 
+    lazy = true,
     change_detection = { notify = false } 
 })
