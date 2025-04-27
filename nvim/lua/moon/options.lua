@@ -1,5 +1,3 @@
-local opt = vim.opt
-
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
@@ -18,8 +16,7 @@ vim.opt.swapfile = false
 vim.opt.undofile = false
 vim.opt.backup = false
 vim.opt.undofile = true
-vim.opt.clipboard = "unnamedplus"
-
+vim.opt.clipboard:append({ "unnamedplus", "unnamed" })
 
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
@@ -28,5 +25,5 @@ vim.opt.smartcase = true
 
 vim.opt.termguicolors = true
 
-vim.opt.showmode = false 
-vim.cmd( [[autocmd FileType * set formatoptions-=ro]] )
+vim.opt.showmode = false
+vim.cmd([[autocmd FileType * set formatoptions-=ro]])
