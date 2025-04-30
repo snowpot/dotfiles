@@ -16,6 +16,7 @@ return {
 				layout_config = {
 					horizontal = { prompt_position = "top", preview_width = 0.55 },
 				},
+				file_ignore_patterns = { ".git/", "node_modules/", "vendor/" }, -- 無視するファイル
 				pickers = {
 					find_files = {
 						theme = "dropdown",

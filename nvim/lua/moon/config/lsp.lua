@@ -1,7 +1,7 @@
 local lspconfig = require("lspconfig")
 local mason_lspconfig = require("mason-lspconfig")
 local servers = {
-	ts_ls = {}, -- 最新のTypeScript LSP
+	ts_ls = {},
 	lua_ls = {
 		settings = {
 			Lua = {
@@ -41,9 +41,7 @@ mason_lspconfig.setup_handlers({
 		local opts = {
 			capabilities = capabilities,
 			on_attach = function(client, bufnr)
-				-- if client.server_capabilities.semanticTokensProvider then
-				-- 	client.server_capabilities.semanticTokensProvider = nil
-				-- end
+				client.server_capabilities.semanticTokensProvider = nil
 				local map_opts = { buffer = bufnr, noremap = true, silent = true }
 				vim.keymap.set("n", "gd", vim.lsp.buf.definition, map_opts)
 				vim.keymap.set("n", "gD", vim.lsp.buf.declaration, map_opts)
@@ -57,7 +55,7 @@ mason_lspconfig.setup_handlers({
 			end,
 		}
 
-		-- サーバーごとの設定をマージ
+		-- merge server-specific options
 		if servers[server_name] then
 			opts = vim.tbl_deep_extend("force", opts, servers[server_name])
 		end

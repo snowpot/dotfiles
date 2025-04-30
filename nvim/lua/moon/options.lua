@@ -15,7 +15,7 @@ vim.opt.showcmd = true
 vim.opt.swapfile = false
 vim.opt.undofile = false
 vim.opt.backup = false
-vim.opt.undofile = true
+vim.opt.undofile = false
 vim.opt.clipboard:append({ "unnamedplus", "unnamed" })
 
 vim.opt.hlsearch = true
