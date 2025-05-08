@@ -13,6 +13,7 @@ return {
 			end,
 			on_highlights = function(hl, c)
 				hl.Visual = { bg = "#21416a" }
+				hl.LineNr = { fg = c.blue }
 				hl["@tag.tsx"] = { fg = "#f72d2e" }
 				hl["@tag.builtin.tsx"] = { fg = c.blue }
 				hl.comment = { fg = "#7b7b7b" }

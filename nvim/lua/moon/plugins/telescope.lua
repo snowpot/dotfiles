@@ -33,5 +33,11 @@ return {
 			},
 		})
 		require("telescope").load_extension("fzf") -- fzf-native拡張ロード
+		vim.keymap.set("n", "fs", function()
+			require("telescope.builtin").grep_string({
+				search = vim.fn.input("Regex > "),
+				use_regex = true,
+			})
+		end, { desc = "Search with regex" })
 	end,
 }
