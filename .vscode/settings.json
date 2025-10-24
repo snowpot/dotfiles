@@ -1,55 +1,144 @@
 {
-  "workbench.iconTheme": "macos-classic-icons",
-  "editor.stickyScroll.enabled": false,
+  "dev.containers.gitCredentialHelperConfigLocation": "global",
+  "breadcrumbs.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.cursorBlinking": "solid",
+  "editor.cursorSmoothCaretAnimation": "off",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[sql]": {
+    "editor.formatOnSave": false
+  },
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
   "editor.folding": false,
+  "editor.fontLigatures": false,
+  "editor.fontWeight": "normal",
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": false
+  },
+  "editor.fontSize": 15,
+  "terminal.integrated.fontSize": 15,
   "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.glyphMargin": false,
+  "editor.semanticHighlighting.enabled": false,
+  "editor.largeFileOptimizations": false,
+  "editor.minimap.enabled": false,
+  "editor.renderLineHighlight": "all",
+  "editor.scrollbar.horizontalScrollbarSize": 4,
+  "editor.scrollbar.verticalScrollbarSize": 4,
+  "editor.selectionHighlight": true,
+  "editor.smoothScrolling": false, // スクロールアニメ無効化
+  "editor.stickyScroll.enabled": false,
+  "editor.wordWrap": "on",
+  "emmet.includeLanguages": {
+    "ejs": "html"
+  },
+  "errorLens.fontWeight": "100",
+  "eslint.codeActionsOnSave.mode": "all",
+  "eslint.format.enable": true,
+  "eslint.run": "onType",
+  "eslint.validate": ["javascript", "typescript", "typescriptreact"],
+  "files.associations": {
+    "*.ejs": "html"
+  },
+  "files.exclude": {
+    "**/.git": false
+  },
+  "git.blame.editorDecoration.enabled": true,
+  "git.suggestSmartCommit": false,
+  "html.format.templating": true,
+  "html.validate.scripts": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "json.schemas": [],
+  "playwright.pickLocatorCopyToClipboard": true,
+  "playwright.reuseBrowser": true,
+  "redhat.telemetry.enabled": false,
+  "search.exclude": {
+    "**/swagger": true,
+    "**/node_modules": true,
+    "package-lock.json": true,
+    "pnpm-lock.yaml": true
+  },
+  "svg.preview.mode": "svg",
+  "vim.hlsearch": true,
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
+      "after": ["<Esc>"],
+      "before": ["j", "j"]
     }
   ],
-  "vim.hlsearch": true,
-  "terminal.integrated.fontFamily": "MesloLGS Nerd Font",
-  "workbench.settings.editor": "json",
-  "window.nativeTabs": false,
-  "workbench.activityBar.location": "top",
-  "editor.fontFamily": "Menlo, Monaco, Consolas, 'Courier New', monospace",
-  "editor.fontSize": 12,
-  "workbench.editor.showIcons": false,
-  "workbench.sideBar.location": "left",
-  "workbench.preferredLightColorTheme": "macOS Classic",
-  "workbench.preferredDarkColorTheme": "macOS Classic Dark v2",
-  "editor.renderLineHighlight": "none",
-  "editor.minimap.enabled": false,
-  "editor.glyphMargin": false,
-  "editor.selectionHighlight": false,
-  "editor.scrollbar.verticalScrollbarSize": 4,
-  "editor.scrollbar.horizontalScrollbarSize": 4,
-  "editor.formatOnSaveMode": "file",
-  "workbench.colorTheme": "macOS Classic Dark v2",
-  "editor.wordWrap": "on",
-  "terminal.integrated.shellIntegration.enabled": true,
-  "syntax.highlightLanguages": [
-    "python",
-    "typescript",
-    "typescriptreact",
-    "javascript",
-    "html",
-    "css",
-    "json",
-    "yaml",
-    "go",
-    "rust",
-    "php",
-    "ruby",
-    "shellscript",
-    "lua"
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["s", "v"],
+      "commands": ["workbench.action.splitEditorRight"]
+    }
   ],
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "window.commandCenter": false,
+  "window.nativeTabs": false,
+  "window.restoreWindows": "none",
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#36393a",
+    "editorBracketMatch.border": "#b0f5fd",
+    "editorHoverWidget.border": "#b2e8ff",
+    "editorIndentGuide.activeBackground1": "#cecece",
+    "editorLineNumber.foreground": "#e6e2e2"
   },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  "window.title": "${dirty}${activeEditorShort}${separator}${activeRepositoryName}${separator}${activeRepositoryBranchName}",
+  "window.titleBarStyle": "custom",
+  "window.customTitleBarVisibility": "never",
+  "workbench.activityBar.location": "hidden",
+  "workbench.statusBar.visible": false,
+  "workbench.editor.highlightModifiedTabs": false,
+  "workbench.editor.showIcons": true,
+  "workbench.settings.applyToAllProfiles": [],
+  "workbench.settings.editor": "json",
+  "workbench.sideBar.location": "left",
+  "workbench.startupEditor": "none",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.svg": "default"
+  },
+
+  "chat.mcp.discovery.enabled": {
+    "claude-desktop": true,
+    "windsurf": true,
+    "cursor-global": true,
+    "cursor-workspace": true
+  },
+  "chat.agent.enabled": true,
+  "go.toolsManagement.autoUpdate": true,
+  "editor.inlineSuggest.edits.allowCodeShifting": "never",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "cSpell.userWords": ["godoc", "gorm"],
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "editor.fontFamily": "PlemolJP",
+  "terminal.integrated.fontFamily": "PlemolJP Console NF",
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.iconTheme": "material-icon-theme"
 }
