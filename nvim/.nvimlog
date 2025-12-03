@@ -1,0 +1,8 @@
+WRN 2025-11-28T14:33:17.038 ?.17778    server_start:193: Failed to start server: operation not permitted: /var/folders/7k/jc4fqc713238cdsd9hy2zqjw0000gn/T/nvim.yukirou/TXG0XM/nvim.17778.0
+WRN 2025-11-28T14:33:17.064 ?.17778    server_start:193: Failed to start server: operation not permitted: /var/folders/7k/jc4fqc713238cdsd9hy2zqjw0000gn/T/nvim.yukirou/TXG0XM/fzf-lua.1764307997.17778.1
+WRN 2025-11-28T14:33:17.064 ?.17778    server_start:193: Failed to start server: operation not permitted: /var/folders/7k/jc4fqc713238cdsd9hy2zqjw0000gn/T/nvim.yukirou/TXG0XM/fzf-lua.1764307997.17778.2
+WRN 2025-11-28T14:34:07.900 ?.18121    server_start:193: Failed to start server: operation not permitted: /var/folders/7k/jc4fqc713238cdsd9hy2zqjw0000gn/T/nvim.yukirou/9KPLfE/nvim.18121.0
+WRN 2025-11-28T14:34:07.930 ?.18121    server_start:193: Failed to start server: operation not permitted: /var/folders/7k/jc4fqc713238cdsd9hy2zqjw0000gn/T/nvim.yukirou/9KPLfE/fzf-lua.1764308047.18121.1
+WRN 2025-11-28T14:34:07.931 ?.18121    server_start:193: Failed to start server: operation not permitted: /var/folders/7k/jc4fqc713238cdsd9hy2zqjw0000gn/T/nvim.yukirou/9KPLfE/fzf-lua.1764308047.18121.2
+WRN 2025-12-02T13:59:21.800 ?.32035    server_start:193: Failed to start server: operation not permitted: /var/folders/7k/jc4fqc713238cdsd9hy2zqjw0000gn/T/nvim.yukirou/xZBePT/nvim.32035.0
+WRN 2025-12-02T14:00:07.936 ?.32093    server_start:193: Failed to start server: operation not permitted: /var/folders/7k/jc4fqc713238cdsd9hy2zqjw0000gn/T/nvim.yukirou/3AbSH5/nvim.32093.0

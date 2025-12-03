@@ -1,1 +1,3 @@
-require("moon")
+require("config.lazy")
+require("config.opt")
+require("config.keymap")

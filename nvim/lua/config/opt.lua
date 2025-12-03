@@ -1,10 +1,18 @@
+vim.env.XDG_STATE_HOME = "/tmp"
 vim.opt.tabstop = 2
+
+vim.opt.cmdheight = 0
+vim.opt.showmode = false
 vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 vim.opt.smarttab = true
+vim.opt.laststatus = 0
+vim.opt.statusline = "─"
+vim.opt.fillchars:append({ stl = "─", stlnc = "─" })
+
 
 vim.opt.number = true
 vim.opt.relativenumber = false
@@ -15,7 +23,6 @@ vim.opt.showcmd = true
 vim.opt.swapfile = false
 vim.opt.undofile = false
 vim.opt.backup = false
-vim.opt.undofile = false
 vim.opt.clipboard:append({ "unnamedplus", "unnamed" })
 
 vim.opt.hlsearch = true
