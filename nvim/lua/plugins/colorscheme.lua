@@ -1,38 +1,23 @@
 return {
-  "rebelot/kanagawa.nvim",
-  priority = 1000,
-  lazy = false,
-  opts = {
-    theme = "dragon",
-    compile = false,
-    colors = {
-      palette = {
-        sumiInk0 = "#191919",
-        sumiInk1 = "#4c4c4c"
-      },
-      theme = {
-        dragon =  {
-          ui = {
-            bg_gutter = "none",
-          },
+  {
+    "craftzdog/solarized-osaka.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("solarized-osaka").setup({
+        transparent = false,
+        styles = {
+          comments = { italic = false },
+          keywords = { italic = false }
         },
-      },
-    },
-    overrides = function(colors)
-      return {
-        Normal       = { bg = "#191919" },
-        NormalFloat  = { bg = "#191919" },
-        SignColumn   = { bg = "#191919" },
-        LineNr       = { bg = "#191919" },
-        CursorLine   = { bg = "#191919" },
-        MsgArea      = { bg = "#191919" },
-        WinSeparator = { bg = "#191919" },
-      }
+        on_highlights = function(hl, _)
+          hl.Visual = { bg = "#586e75"}
+        end,
+        on_colors = function (colors)
+          colors.bg = colors.base02
+        end
+      })
+      vim.cmd.colorscheme("solarized-osaka")
     end,
   },
-
-  config = function(_, opts)
-    require("kanagawa").setup(opts)
-    vim.cmd.colorscheme("kanagawa-dragon")
-  end,
 }

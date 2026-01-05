@@ -1,0 +1,74 @@
+local wezterm = require 'wezterm'
+
+local config = wezterm.config_builder()
+config.automatically_reload_config = true
+
+config.font_size = 17.0
+config.font = wezterm.font_with_fallback({
+  { family = "UbuntuMono Nerd Font", scale = 1.05 },
+  { family = "ヒラギノ角ゴシック", scale = 0.90 }
+})
+config.use_ime = true
+config.window_background_opacity = 0.85
+config.macos_window_background_blur = 15
+config.window_decorations = "RESIZE"
+config.hide_tab_bar_if_only_one_tab = true
+config.use_fancy_tab_bar = false
+config.initial_cols = 120
+config.initial_rows = 38
+config.color_scheme = 'Solarized (dark) (terminal.sexy)'
+
+config.colors = {
+  tab_bar = {
+    background = "none",
+    inactive_tab_edge = "none",
+  },
+}
+
+config.window_frame = {
+  inactive_titlebar_bg = "none",
+  active_titlebar_bg = "none",
+}
+
+config.show_new_tab_button_in_tab_bar = false
+config.show_close_tab_button_in_tabs = false
+
+local SOLID_LEFT_ARROW = wezterm.nerdfonts.ple_lower_right_triangle
+local SOLID_RIGHT_ARROW = wezterm.nerdfonts.ple_lower_left_triangle
+
+wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_width)
+  local background = "#5c6d74"
+  local foreground = "#FFFFFF"
+  local edge_background = "none"
+
+  if tab.is_active then
+    background = "#b58900"
+    foreground = "#FFFFFF"
+  end
+
+  local edge_foreground = background
+
+  local title_max_width = math.max(0, max_width - 4)
+  local title = " " .. wezterm.truncate_right(tab.active_pane.title, title_max_width) .. " "
+
+  return {
+    { Background = { Color = edge_background } },
+    { Foreground = { Color = edge_foreground } },
+    { Text = SOLID_LEFT_ARROW },
+    { Background = { Color = background } },
+    { Foreground = { Color = foreground } },
+    { Text = title },
+    { Background = { Color = edge_background } },
+    { Foreground = { Color = edge_foreground } },
+    { Text = SOLID_RIGHT_ARROW },
+  }
+end)
+
+local keybinds = require 'keybinds'
+config.keys = keybinds.keys
+config.key_tables = keybinds.key_tables
+
+config.leader = { key = "b", mods = "CTRL", timeout_milliseconds = 2000 }
+
+
+return config
