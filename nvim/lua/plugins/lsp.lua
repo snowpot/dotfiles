@@ -1,6 +1,7 @@
 return {
   {
     "neovim/nvim-lspconfig",
+    event = { "BufReadPre", "BufNewFile" },
     dependencies = {
       "williamboman/mason.nvim",
       "williamboman/mason-lspconfig.nvim",
@@ -16,6 +17,7 @@ return {
 
       local capabilities = vim.lsp.protocol.make_client_capabilities()
       capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
+
 
       vim.api.nvim_create_autocmd("LspAttach", {
         callback = function(args)
