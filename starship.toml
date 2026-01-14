@@ -1,0 +1,60 @@
+# ── 基本 ─────────────────────────────
+format = """
+┌─[](#268bd2)\
+$directory\
+[](bg:#2aa198 fg:#268bd2)\
+$git_branch$git_status\
+[](fg:#2aa198)\
+\n└─$character
+"""
+
+add_newline = true
+
+# ── ディレクトリ ─────────────────────
+[directory]
+style = "bg:#268bd2 fg:#002b36"
+format = "[$path ]($style)"
+truncation_length = 3
+truncate_to_repo = true
+
+# ── Git ──────────────────────────────
+[git_branch]
+symbol = " "
+style = "bg:#2aa198 fg:#002b36"
+format = "[$symbol$branch ]($style)"
+
+[git_status]
+style = "bg:#2aa198 fg:#002b36"
+format = "[$all_status$ahead_behind ]($style)"
+conflicted = "[=$count](bg:#2aa198 fg:#b58900)"
+ahead = "[⇡$count](bg:#2aa198 fg:#b58900)"
+behind = "[⇣$count](bg:#2aa198 fg:#b58900)"
+diverged = "[⇕⇡$ahead_count⇣$behind_count](bg:#2aa198 fg:#b58900)"
+untracked = "[?$count](bg:#2aa198 fg:#b58900)"
+stashed = "[\\$$count](bg:#2aa198 fg:#b58900)"
+modified = "[!$count](bg:#2aa198 fg:#b58900)"
+staged = "[+$count](bg:#2aa198 fg:#b58900)"
+renamed = "[»$count](bg:#2aa198 fg:#b58900)"
+deleted = "[✘$count](bg:#2aa198 fg:#b58900)"
+
+# ── コマンド時間 ────────────────────
+[cmd_duration]
+style = "bg:#073642 fg:#b58900"
+format = "[ $duration ]($style)"
+min_time = 500
+
+# ── プロンプト記号 ─────────────────
+[character]
+success_symbol = "[❯](bold fg:#859900)"
+error_symbol = "[❯](bold fg:#dc322f)"
+vimcmd_symbol = "[❮](bold fg:#2aa198)"
+
+# ── その他見た目 ────────────────────
+[username]
+disabled = true
+
+[hostname]
+disabled = true
+
+[time]
+disabled = true
