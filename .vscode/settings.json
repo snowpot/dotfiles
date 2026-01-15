@@ -1,55 +1,66 @@
 {
-  "workbench.iconTheme": "macos-classic-icons",
+  "workbench.iconTheme": "vs-seti-folder",
   "editor.stickyScroll.enabled": false,
   "editor.folding": false,
-  "editor.formatOnSave": true,
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "j"],
       "after": ["<Esc>"]
     }
   ],
+  "editor.semanticHighlighting.enabled": false,
   "vim.hlsearch": true,
-  "terminal.integrated.fontFamily": "MesloLGS Nerd Font",
-  "workbench.settings.editor": "json",
   "window.nativeTabs": false,
-  "workbench.activityBar.location": "top",
-  "editor.fontFamily": "Menlo, Monaco, Consolas, 'Courier New', monospace",
-  "editor.fontSize": 12,
-  "workbench.editor.showIcons": false,
+  "workbench.activityBar.location": "bottom",
+  "workbench.editor.showIcons": true,
   "workbench.sideBar.location": "left",
-  "workbench.preferredLightColorTheme": "macOS Classic",
-  "workbench.preferredDarkColorTheme": "macOS Classic Dark v2",
-  "editor.renderLineHighlight": "none",
+  "editor.renderLineHighlight": "line",
   "editor.minimap.enabled": false,
   "editor.glyphMargin": false,
-  "editor.selectionHighlight": false,
+  "editor.selectionHighlight": true,
   "editor.scrollbar.verticalScrollbarSize": 4,
   "editor.scrollbar.horizontalScrollbarSize": 4,
   "editor.formatOnSaveMode": "file",
-  "workbench.colorTheme": "macOS Classic Dark v2",
   "editor.wordWrap": "on",
-  "terminal.integrated.shellIntegration.enabled": true,
-  "syntax.highlightLanguages": [
-    "python",
-    "typescript",
-    "typescriptreact",
-    "javascript",
-    "html",
-    "css",
-    "json",
-    "yaml",
-    "go",
-    "rust",
-    "php",
-    "ruby",
-    "shellscript",
-    "lua"
-  ],
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "git.suggestSmartCommit": false,
+  "workbench.startupEditor": "none",
+  "eslint.codeActionsOnSave.mode": "all",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "terminal.integrated.fontFamily": "MesloLGS Nerd Font",
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": false
+  },
+  "workbench.colorCustomizations": {
+    "editor.background": "#191919",
+    "sideBar.background": "#191919",
+    "tab.activeBackground": "#191919",
+    "tab.inactiveBackground": "#333333",
+    "tab.border": "#68d6ff",
+    "editorGroupHeader.tabsBackground": "#191919",
+    "panel.background": "#191919",
+    "titleBar.border": "#191919",
+    "titleBar.activeBackground": "#191919"
+  },
+  "window.commandCenter": false,
+  "files.exclude": {
+    "**/.git": false
+  },
+  "errorLens.fontWeight": "400",
+  "json.schemas": [],
+  "editor.fontSize": 13.4,
+  "editor.fontFamily": "Hack Nerd Font",
+  "workbench.colorTheme": "Solarized Dark",
+  "terminal.integrated.fontSize": 13,
+  "workbench.settings.applyToAllProfiles": [],
+  "workbench.settings.editor": "json"
 }

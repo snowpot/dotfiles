@@ -5,11 +5,11 @@ config.automatically_reload_config = true
 
 config.font_size = 15.0
 config.font = wezterm.font_with_fallback({
-	{ family = "Hack Nerd Font", scale = 1.05 },
+	{ family = "UbuntuSansMono Nerd Font", scale = 1.05 },
 	{ family = "ヒラギノ角ゴシック", scale = 0.90 },
 })
 config.use_ime = true
-config.window_background_opacity = 0.85
+config.window_background_opacity = 0.95
 config.macos_window_background_blur = 15
 config.window_decorations = "RESIZE"
 config.hide_tab_bar_if_only_one_tab = true
@@ -19,7 +19,7 @@ config.initial_rows = 38
 config.color_scheme = "Solarized (dark) (terminal.sexy)"
 
 config.colors = {
-	background = "#191919",
+	background = "#00141A",
 	tab_bar = {
 		background = "none",
 		inactive_tab_edge = "none",

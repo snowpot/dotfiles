@@ -22,6 +22,7 @@ truncate_to_repo = true
 symbol = " "
 style = "bg:#2aa198 fg:#002b36"
 format = "[$symbol$branch ]($style)"
+truncation_length = 10
 
 [git_status]
 style = "bg:#2aa198 fg:#002b36"

@@ -17,7 +17,7 @@ return {
 					hl.SnacksIndentChunk = { fg = "#8BDDFC" } -- base01
 				end,
 				on_colors = function(colors)
-					colors.bg = "#191919"
+					colors.bg = colors.base04
 				end,
 			})
 			vim.cmd.colorscheme("solarized-osaka")
